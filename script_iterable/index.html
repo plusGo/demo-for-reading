@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const arr = ['a', 'b', 'c', 'd', 'e'];
+    const obj = {a: 1, b: 2, c: 3};
+
+    /**
+     * example：for...in
+     */
+    function test() {
+        for (let i in arr) {
+            console.log(i);
+        }
+        for (let i in obj) {
+            console.log(i);
+        }
+    }
+
+    test();
+
+        console.log('================')
+    /**
+     * example：for...of
+     */
+    function test2() {
+        for (let i of arr) {
+            console.log(i);
+        }
+        for (let i of obj) {
+            console.log(i);
+        }
+    }
+
+    test2();
+
+</script>
+</body>
+</html>

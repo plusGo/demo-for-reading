@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        console.log('头部里的script脚本执行了')
+    </script>
+</head>
+<body>
+
+<script src="index2.js" defer></script>
+<script src="index.js" async></script>
+<script>
+    for(let i = 0;i<100000;i++){
+        document.body.append(document.createElement('div'));
+    }
+    console.log('脚部里的script脚本执行了')
+</script>
+</body>
+</html>
