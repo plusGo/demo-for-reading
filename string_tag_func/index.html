@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function tagFunc(strings, ...expressions) {
+        console.log(strings)
+        for(const expression of expressions){
+            console.log(expression);
+        }
+    }
+
+    const a = 1;
+    const c = 1;
+    tagFunc`${a}+${c}=${a + c}`
+</script>
+</body>
+</html>
